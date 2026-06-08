@@ -6,7 +6,7 @@ from urllib.parse import quote
 
 import os
 
-TOKEN = os.getenv("DISCORD_TOKEN")
+
 PREFIXO = "!"
 
 intents = discord.Intents.default()
@@ -477,6 +477,6 @@ import os
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 if not TOKEN:
-    print("Erro: O token não foi configurado corretamente no Railway.")
+    print("ERRO: A variável DISCORD_TOKEN não foi configurada no Railway!")
 else:
     bot.run(TOKEN)

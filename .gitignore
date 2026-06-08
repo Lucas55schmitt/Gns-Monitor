@@ -1,0 +1,5 @@
+﻿guilda_monitor.db
+__pycache__/
+*.pyc
+api_debug.json
+rucoystats_debug.html

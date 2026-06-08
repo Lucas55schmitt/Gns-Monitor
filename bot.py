@@ -473,4 +473,10 @@ async def regrediu(ctx, *, nome_guilda):
         )
 
     await ctx.send(texto[:2000])
-bot.run(TOKEN)
+import os 
+TOKEN = os.getenv("DISCORD_TOKEN")
+
+if not TOKEN:
+    print("Erro: O token não foi configurado corretamente no Railway.")
+else:
+    bot.run(TOKEN)
